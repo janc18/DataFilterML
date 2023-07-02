@@ -1,5 +1,13 @@
 import pandas as pd
 import re
+from tkinter import *
+from tkinter import ttk
+
+root = ttk.Frame(padding=10, height=800, width=800)
+root.pack
+ttk.Label(root, text="primer paso").pack()
+
+
 
 with open(ruta, 'r') as f:
     text = f.read()
