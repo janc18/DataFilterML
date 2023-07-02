@@ -7,7 +7,7 @@ import re
 root = tk.Tk()
 frm1 = ttk.Frame(root, height=800, width=800)
 frm1.pack()
-ttk.Label(frm1, text="primer paso").pack()
+ttk.Label(frm1, text="primer paso").place(relx=0.5, rely= 0.2)
 
 root.mainloop()
 
