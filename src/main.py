@@ -1,12 +1,24 @@
 import tkinter as tk
+from tkinter import *
+from tkinter.ttk import _Padding
 import msgMarkdown
 from tkinter import ttk
 import pandas as pd
 import re
-from tkinterweb import HtmlLabel
-root = tk.Tk()
 
-md='''
+class MyApplication(ttk.Frame):
+    def __init__(Self, Master = None):
+        super().__init__(Master)
+        Self.Master = Master
+        Self.Master.title('DataFilterML')
+        Self.Master.attributes("-fullscreen", True)
+
+Root = tk.Tk()
+
+App = MyApplication(Master=Root)
+App.mainloop()
+
+'''md='''
 #titulo
 
 ## subtitulo
@@ -14,7 +26,7 @@ md='''
 '''
 mdlabel=HtmlLabel(root,msgMarkdown.MarkdownToHtml("./msgText.md"))
 mdlabel.pack() #attach the HtmlFrame widget to the parent window
-root.mainloop()
+root.mainloop()'''
 
 """
 
