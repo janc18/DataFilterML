@@ -1,14 +1,19 @@
 import tkinter as tk
-from tkinter import *
+import msgMarkdown
 from tkinter import ttk
 import pandas as pd
 import re
-
+from tkinterweb import HtmlLabel
 root = tk.Tk()
-frm1 = ttk.Frame(root, height=800, width=800)
-frm1.pack()
-ttk.Label(frm1, text="primer paso").place(relx=0.5, rely= 0.2)
 
+md='''
+#titulo
+
+## subtitulo
+
+'''
+mdlabel=HtmlLabel(root,msgMarkdown.MarkdownToHtml("./msgText.md"))
+mdlabel.pack() #attach the HtmlFrame widget to the parent window
 root.mainloop()
 
 """
