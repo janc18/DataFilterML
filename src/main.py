@@ -3,7 +3,7 @@ import msgMarkdown
 from tkinter import ttk
 import pandas as pd
 import re
-from tkinterweb import HtmlLabel
+#from tkinterweb import HtmlLabel
 root = tk.Tk()
 
 md='''
@@ -12,8 +12,6 @@ md='''
 ## subtitulo
 
 '''
-mdlabel=HtmlLabel(root,msgMarkdown.MarkdownToHtml("./msgText.md"))
-mdlabel.pack() #attach the HtmlFrame widget to the parent window
 root.mainloop()
 
 """
