@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import *
-from tkinter.ttk import _Padding
-import msgMarkdown
 from tkinter import ttk
 import pandas as pd
+import re
+import msgMarkdown
 import re
 
 class MyApplication(ttk.Frame):
@@ -11,7 +11,9 @@ class MyApplication(ttk.Frame):
         super().__init__(Master)
         Self.Master = Master
         Self.Master.title('DataFilterML')
-        Self.Master.attributes("-fullscreen", True)
+        Self.Master.state('zoomed')
+        
+        Self.Notebook = 
 
 Root = tk.Tk()
 
