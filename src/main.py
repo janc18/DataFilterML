@@ -19,17 +19,6 @@ Root = tk.Tk()
 
 App = MyApplication(Master=Root)
 App.mainloop()
-
-'''md='''
-#titulo
-
-## subtitulo
-
-'''
-mdlabel=HtmlLabel(root,msgMarkdown.MarkdownToHtml("./msgText.md"))
-mdlabel.pack() #attach the HtmlFrame widget to the parent window
-root.mainloop()'''
-
 """
 
 with open(ruta, 'r') as f:
