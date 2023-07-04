@@ -1,19 +1,24 @@
 import tkinter as tk
-import msgMarkdown
+from tkinter import *
 from tkinter import ttk
 import pandas as pd
 import re
-#from tkinterweb import HtmlLabel
-root = tk.Tk()
+import msgMarkdown
+import re
 
-md='''
-#titulo
+class MyApplication(ttk.Frame):
+    def __init__(Self, Master = None):
+        super().__init__(Master)
+        Self.Master = Master
+        Self.Master.title('DataFilterML')
+        Self.Master.state('zoomed')
+        
+        Self.Notebook = 
 
-## subtitulo
+Root = tk.Tk()
 
-'''
-root.mainloop()
-
+App = MyApplication(Master=Root)
+App.mainloop()
 """
 
 with open(ruta, 'r') as f:
