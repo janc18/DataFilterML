@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import ttk
+import sv_ttk
 import pandas as pd
 import re
 import msgMarkdown
@@ -19,15 +20,23 @@ class MyApplication(ttk.Frame):
         Self.Graph = Frame(Self.Master, bg='white')
         Self.Graph.pack(side='bottom', fill='both', expand=True)
         
-        style = ttk.Style()
-        style.configure('Red.TFrame', background='red')
-        
-        Self.ToolsSettings = ttk.Frame(Self.Graph, width=100, style='Red.TFrame')
+        Self.ToolsSettings = ttk.Frame(Self.Graph, width=200)
         Self.ToolsSettings.pack(side='left', fill='y')
+        
+        Tab1 = ttk.Frame(Self.Notebook)
+        Tab2 = ttk.Frame(Self.Notebook)
+        Tab3 = ttk.Frame(Self.Notebook)
+        Tab4 = ttk.Frame(Self.Notebook)
+
+        Self.Notebook.add(Tab1, text='File')
+        Self.Notebook.add(Tab2, text='Edition')
+        Self.Notebook.add(Tab3, text='Data')
+        Self.Notebook.add(Tab4, text='Tools') 
         
 Root = tk.Tk()
 
 App = MyApplication(Master=Root)
+sv_ttk.set_theme('dark')
 App.mainloop()
 """
 
