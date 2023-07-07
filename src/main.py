@@ -13,8 +13,18 @@ class MyApplication(ttk.Frame):
         Self.Master.title('DataFilterML')
         Self.Master.state('zoomed')
         
-        Self.Notebook = 
-
+        Self.Notebook = ttk.Notebook(Self.Master, height=100)
+        Self.Notebook.pack(side='top', fill='x')
+        
+        Self.Graph = Frame(Self.Master, bg='white')
+        Self.Graph.pack(side='bottom', fill='both', expand=True)
+        
+        style = ttk.Style()
+        style.configure('Red.TFrame', background='red')
+        
+        Self.ToolsSettings = ttk.Frame(Self.Graph, width=100, style='Red.TFrame')
+        Self.ToolsSettings.pack(side='left', fill='y')
+        
 Root = tk.Tk()
 
 App = MyApplication(Master=Root)
