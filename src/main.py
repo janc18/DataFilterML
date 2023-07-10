@@ -27,6 +27,7 @@ class MyApplication(ttk.Frame):
         Tab2 = ttk.Frame(Self.Notebook)
         Tab3 = ttk.Frame(Self.Notebook)
         Tab4 = ttk.Frame(Self.Notebook)
+        
 
         Self.Notebook.add(Tab1, text='File')
         Self.Notebook.add(Tab2, text='Edition')
