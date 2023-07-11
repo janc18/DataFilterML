@@ -37,7 +37,7 @@ class MyApplication(ttk.Frame):
 Root = tk.Tk()
 
 App = MyApplication(Master=Root)
-sv_ttk.set_theme('dark')
+sv_ttk.set_theme('white')
 App.mainloop()
 """
 
