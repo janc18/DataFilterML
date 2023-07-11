@@ -216,3 +216,5 @@ ts-gen
 patches/mtime-cache.json
 
 spec/fixtures/logo.png
+
+**out/
